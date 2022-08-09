@@ -1,0 +1,30 @@
+
+<h1> THIS ONE SHOW CUSTOM PIPES</h1>
+
+<section>
+    <h3>Pipes are used to format data</h3>
+    <ul>
+        <li>Uppercase for example</li>
+        <li>Precent, decimal or date and time</li>
+    </ul>
+</section>
+
+<section>
+<div class="container"></div>
+<p><b>{{coursedata.title | uppercase |lowercase }}</b></p>
+<p>{{coursedata.rating | number}}</p>
+<p>{{coursedata.students| number:'1.2-2' }}</p>
+<p>{{coursedata.price| currency:'$':true:'3.2'}}</p>
+<p>{{coursedata.reaseDate|date:'shortDate' }}</p>
+<p>{{coursedata.clockString |custompipe}}</p>
+<p>{{randomText |custompipe}}</p>
+
+<!-- SEARCH UP DATEPIPE-->
+
+
+<!-- HERE YOU CAN USE FILTER-->
+
+</section>
+
+<p > {{createData(coursedata.title)}} </p>
+<p n></p>

@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+
+
+  
+   
+/*   title = 'pipes';
+  rating= 4.9533;
+  students = 30123;
+  price = 190.95;
+  todaysdate = new Date(5000); */
+
+
 }
