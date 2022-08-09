@@ -19,6 +19,18 @@
 <p>{{coursedata.clockString |custompipe}}</p>
 <p>{{randomText |custompipe}}</p>
 
+<span class="bi bi-star" onclick="favoriteTheItem()"
+[class.bi-star]="isFavorite"
+[class.bi-star-fill]="!isFavorite"
+>HERE IS A PRETTY STAR
+</span>
+
+
+
+
+
+
+<!-- <span class="star-fill"  onclick="favoriteTheItem()" [class.glyphicon-star]="isFavorite" >X</span> -->
 <!-- SEARCH UP DATEPIPE-->
 
 
@@ -27,4 +39,7 @@
 </section>
 
 <p > {{createData(coursedata.title)}} </p>
-<p n></p>
+<p ></p>
+
+<input type="text"[(ngModel)]="titleOfMovie">
+<section>FORMATET OUTPUT: {{titleOfMovie | titleCase}} </section>

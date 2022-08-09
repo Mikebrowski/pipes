@@ -8,18 +8,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { SummaryPipe } from './mainpipe/custompipe';
+import { FormsModule } from '@angular/forms';
+import { ComplexPipe } from './mainpipe/morecomplex';
 @NgModule({
   declarations: [
     AppComponent,
     MainpipeComponent,
-    SummaryPipe
+    SummaryPipe,
+    ComplexPipe
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
